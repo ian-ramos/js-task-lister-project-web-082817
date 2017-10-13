@@ -15,7 +15,6 @@ createListForm.addEventListener("submit", e => {
   newList.appendChild(newListDiv);
   const list = new List(term);
   newListDiv.dataset.id = `${list.id}`;
-  const buttonHTML = 
 
   //add element to task dropdown
   const selectList = document.getElementById("parent-list");

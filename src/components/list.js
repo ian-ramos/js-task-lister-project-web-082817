@@ -22,6 +22,11 @@ const List = (() => {
         return task.listId === this.id;
       });
     }
+
+    static deleteList(id) {
+      const listToBeDeleted = List.all.find(list => list.id === id);
+      List.all.splice(List.all.indexOf(listToBeDeleted), 1);
+    }
   };
 })();
 
